@@ -6,7 +6,7 @@ const router=express.Router()
 const jwt=require('jsonwebtoken')
 
 const requireLogin=require('../middleware/requireLogin')
-const JWT_SECRET =  require('../config/keys')
+const {JWT_SECRET} =  require('../config/keys')
 const User=mongoose.model("User")
 
 router.get('/',(req,res)=>{

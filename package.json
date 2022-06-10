@@ -18,5 +18,14 @@
   },
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "\"# postInsta\"",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MdNoorullah/postInsta.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/MdNoorullah/postInsta/issues"
+  },
+  "homepage": "https://github.com/MdNoorullah/postInsta#readme"
 }

@@ -6,7 +6,7 @@ const requireLogin=require ('../middleware/requireLogin')
 const Post=mongoose.model("Post")
 const router=express.Router()
 
-router.post('/allpost',requireLogin,(req,res)=>{
+router.get('/allpost',requireLogin,(req,res)=>{
     Post.find()// to find all the post if we want to find a particular then we required to pass words inside find 
     .populate("postedBy","_id name" )// to populate the specific part of Api post by
     .populate("comments.postedBy","_id name")
@@ -20,7 +20,7 @@ router.post('/allpost',requireLogin,(req,res)=>{
     
 })
 
-router.post('/getsubpost',requireLogin,(req,res)=>{
+router.get('/getsubpost',requireLogin,(req,res)=>{
 
     // if postedBy in following
     Post.find({postedBy:{$in:req.user.following}})//search in following array

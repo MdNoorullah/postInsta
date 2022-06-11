@@ -174,6 +174,7 @@ const SubscribesUserPosts  = ()=>{
                                 <form onSubmit={(e)=>{
                                     e.preventDefault()//to prevent refreshing of page
                                     makeComment(e.target[0].value,item._id)
+                                    e.target[0].value=''
                                 }}>
                                   <input type="text" placeholder="add a comment" />  
                                 </form>

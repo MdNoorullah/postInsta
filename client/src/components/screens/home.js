@@ -166,15 +166,7 @@ const SubscribesUserPosts  = ()=>{
                                     item.comments.map(record=>{
                                         return(
                                             
-                                        <h6 key={record._id}><span style={{fontWeight:"500"}}>{record.postedBy.name}</span> {record.text} 
-                                        {record.postedBy._id == state._id
-                                         &&
-                                        <i className="material-icons" style={{
-                                            float:"right"
-                                        }} 
-                                        onClick={()=>deleteComment(item._id,record._id)}
-                                        >clear</i>}
-                                        </h6>
+                                        <h6 key={record.postedBy._id}><span style={{color:'blue'}}><Link to={record.postedBy._id==state._id?'/profile':'/profile/'+record.postedBy._id}>{record.postedBy.name}</Link>:</span> {record.text}</h6>
                                         )
                                     })
                                 }

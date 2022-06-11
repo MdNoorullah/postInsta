@@ -8,7 +8,7 @@ const Explore  = ()=>{
     const {state,dispatch} = useContext(UserContext)
     useEffect(()=>{
        fetch('/allpost',{
-         method:"GET",
+         method:"POST",
            headers:{
                "Authorization":"Bearer "+localStorage.getItem("jwt")
            }

@@ -144,6 +144,7 @@ const SubscribesUserPosts  = ()=>{
                             >delete</i>
 
                             }</h5>
+                            <h6>{item.title}</h6>
                             <div className="card-image">
                                 <img src={item.photo}/>
                             </div>
@@ -160,7 +161,7 @@ const SubscribesUserPosts  = ()=>{
                             >favorite_border</i>
                             }
                                 <h6>{item.likes.length} likes</h6>
-                                <h6>{item.title}</h6>
+                                
                                 <p>{item.body}</p>
                                 {
                                     item.comments.map(record=>{

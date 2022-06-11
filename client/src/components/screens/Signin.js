@@ -44,7 +44,7 @@ const Signin=()=>{
       <div className="mycard">
         
       <div className="card auth-card  input-field ">
-      <h2 className="brand-logo">post-insta</h2>
+      <h2 className="brand-logo">insta</h2>
       <input type="text" placeholder="Email"
          value={email}
          onChange={(e)=>setEmail(e.target.value)}

@@ -35,7 +35,7 @@ const Routing= ()=>{
     <Route exact path="/signin" element={<Signin />} ></Route>
     <Route exact path="/signup" element={<Signup />} ></Route>
     <Route exact path="/profile" element={<Profile />} ></Route>
-    <Route exact path="/" element={<Explore />} </Route>
+    <Route exact path="/" element={<Explore />} ></Route>
     <Route  path="/profile/:userid" element={<UserProfile />} ></Route>
     <Route exact path="/Createpost" element={<Createpost />} ></Route>
     </Routes>

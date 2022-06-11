@@ -20,7 +20,7 @@ router.get('/allpost',requireLogin,(req,res)=>{
     
 })
 
-router.get('/getsubpost',requireLogin,(req,res)=>{
+router.post('/getsubpost',requireLogin,(req,res)=>{
 
     // if postedBy in following
     Post.find({postedBy:{$in:req.user.following}})//search in following array

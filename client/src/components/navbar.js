@@ -38,7 +38,7 @@ const NavBar=()=>{
     return(
         <nav>
     <div className="nav-wrapper white" >
-      <Link to={state?"/":"/signin"} className="brand-logo left">post-insta</Link>
+      <Link to={state?"/":"/signin"} className="brand-logo left">insta</Link>
       <ul id="nav-mobile" className="right ">
         {renderList()}
         {/* in place of anchor tag a and href use link in a anf to in href */}

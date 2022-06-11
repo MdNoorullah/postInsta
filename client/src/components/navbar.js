@@ -19,6 +19,7 @@ const NavBar=()=>{
                 localStorage.clear()
                 dispatch({type:"CLEAR"})
                 navigate('/signin');
+                window.location.reload();
               }}
             >
               Log out

@@ -10,7 +10,7 @@ const NavBar=()=>{
          return [
           <li key="3"><Link to="/followingPost"><i className="material-icons" >favorite</i></Link></li>,
           <li key="1"><Link to="/createpost"><i className="material-icons" style={{color:""}}>add_box</i> </Link></li>,
-          <li key="2"><a href="https://chat-webap.herokuapp.com/chat.html"><i className="material-icons" >explore</i></a></li>,
+          <li key="2"><a href="https://chat-webap.herokuapp.com/chat.html"><i className="material-icons" >textsms</i></a></li>,
           
           <li key="7"><Link to="/profile"><i className="material-icons" >account_circle</i></Link></li>,
           <li key="4">
